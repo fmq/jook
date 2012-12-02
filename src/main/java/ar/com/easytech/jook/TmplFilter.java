@@ -17,7 +17,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebFilter(filterName = "tmpl", urlPatterns = {"*.html"})
+@WebFilter(filterName = "jook", urlPatterns = {"*.html"})
 public class TmplFilter implements Filter {
 
 	@Override
@@ -48,7 +48,7 @@ public class TmplFilter implements Filter {
 	
 	@Override
 	public void init(FilterConfig arg0) throws ServletException {
-		System.out.println("TmplFilter init");
+		System.out.println("jook Filter init");
 	}
 
 }

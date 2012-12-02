@@ -28,7 +28,7 @@ public class TemplateParser {
 		
 		if (templateDef != null)
 				parseTemplate(templateDef);
-		//Onece the template is applied we parse ot includes
+		//Once the template is applied we parse the includes
 		parseIncludes();
 		//We return the html
 		return doc.html();
@@ -59,8 +59,6 @@ public class TemplateParser {
 		//We Parse the holders, we actually only need to
 		// check if there is one for this particular document
 		doc = parseHolders(template, contentName);
-		
-		
 	}
 	
 	public String getContentName() {

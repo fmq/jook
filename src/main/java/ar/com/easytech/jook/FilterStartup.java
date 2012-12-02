@@ -15,8 +15,8 @@ public class FilterStartup implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent ctx) {
-		System.out.println("Adding tmpl filter...");
-		ctx.getServletContext().addFilter("tmpl", TmplFilter.class);
+		System.out.println("Adding jook filter...");
+		ctx.getServletContext().addFilter("jook", TmplFilter.class);
 		
 	}
 
